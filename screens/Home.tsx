@@ -1,8 +1,10 @@
 import { Ionicons } from "@expo/vector-icons";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { Pressable, Text, View } from "react-native";
+import { Pressable, ScrollView, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import MovieCard from "../components/MovieCard";
+import TrendingCard from "../components/TrendingCard";
 
 const Home = () => {
   const { top, left, right, bottom } = useSafeAreaInsets();
@@ -13,7 +15,7 @@ const Home = () => {
         style={{
           backgroundColor: "#0d1123",
           paddingTop: top + 16,
-          paddingHorizontal: 20,
+          paddingHorizontal: 16,
           paddingBottom: bottom,
           height: "100%",
         }}
@@ -34,41 +36,36 @@ const Home = () => {
             </View>
           </Pressable>
         </View>
-        <Text style={{ color: "white" }}>Home</Text>
+        <TrendingCard />
         <View
           style={{
-            height: 220,
-            backgroundColor: "#071047",
-            marginTop: 28,
-            borderRadius: 20,
             flexDirection: "row",
-            paddingHorizontal: 20,
-            paddingVertical: 18,
+            justifyContent: "space-between",
+            marginTop: 20,
+            marginBottom: 14,
           }}
         >
-          <View style={{ flex: 1, alignItems: "flex-start" }}>
-            <Text
-              style={{ color: "white", fontSize: 20, fontFamily: "heading", marginBottom: 10 }}
-            >
-              Violet Evergarden
-            </Text>
-            <Text style={{color: "white", fontSize: 14, fontFamily: "text"}}>
-              After a great war, Violet Evergarden, a young ex-soldier woman works as writer
-            </Text>
-          </View>
-          <View style={{ flex: 1, alignItems: "flex-end" }}>
-            <Text
-              style={{
-                color: "white",
-                fontSize: 20,
-                fontFamily: "text",
-                fontWeight: "400",
-              }}
-            >
-              MODEL
-            </Text>
-          </View>
+          <Text style={{ color: "white", fontSize: 18, fontFamily: "heading" }}>
+            Trending Movies
+          </Text>
+          <Pressable onPress={() => console.log("Warra React Native")}>
+            <Text style={{ color: "#1c82f0d6", fontSize: 16 }}>See all</Text>
+          </Pressable>
         </View>
+        <ScrollView alwaysBounceHorizontal={true} horizontal={true} style={{ columnGap: 20 }}>
+          <View style={{marginRight: 12}}>
+            <MovieCard/>
+          </View>
+          <View style={{marginRight: 12}}>
+            <MovieCard/>
+          </View>
+          <View style={{marginRight: 12}}>
+            <MovieCard/>
+          </View>
+          <View style={{marginRight: 12}}>
+            <MovieCard/>
+          </View>
+        </ScrollView>
       </View>
     </>
   );

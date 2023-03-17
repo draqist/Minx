@@ -11,7 +11,6 @@ export default StyleSheet.create({
     backgroundColor: "#12182A",
     blurRadius: 9,
     borderRadius: 20,
-
     marginHorizontal: width * 0.05,
   },
   mainTab: {
