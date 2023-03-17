@@ -1,6 +1,6 @@
 import { Dimensions, StyleSheet } from "react-native";
 // theme color === #12182A
-const width = Dimensions.get("window").width;
+const { width } = Dimensions.get("window");
 
 export default StyleSheet.create({
   container: {

@@ -1,8 +1,8 @@
 import React from "react";
-import { Dimensions, Pressable, Text, View } from "react-native";
+import { Pressable, View } from "react-native";
 import styles from "../styles/BottomTab";
+import Icons from "./Icons";
 
-const width = Dimensions.get("window").width;
 const TabComponent = ({ state, descriptors, navigation }: any) => {
   const { container, mainTab, innerTab } = styles;
   return (
@@ -44,7 +44,7 @@ const TabComponent = ({ state, descriptors, navigation }: any) => {
               }}
             >
               <View style={innerTab}>
-                {/* {options.tabBarIcon({focused: isFocused, color: "#fff", size: 20})} */}
+                <Icons route={label} isFocused={isFocused} />
               </View>
             </Pressable>
           </View>
