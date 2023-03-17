@@ -8,7 +8,8 @@ const Stack = createStackNavigator();
 export default function App() {
   const [loaded] = useFonts({
     Logo: require("./assets/fonts/MonumentExtended-Black.otf"),
-    text: require("./assets/fonts/roboto-cyrillic-300-normal.ttf"),
+    text: require("./assets/fonts/roboto-cyrillic-400-normal.ttf"),
+    heading: require("./assets/fonts/roboto-cyrillic-700-normal.ttf"),
   });
   if (!loaded) {
     return null;

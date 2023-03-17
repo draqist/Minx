@@ -47,12 +47,21 @@ const Home = () => {
           }}
         >
           <View style={{ flex: 1, alignItems: "flex-start" }}>
-            <Text style={{ color: "white", fontSize: 20, fontFamily: "text" }}>
+            <Text
+              style={{ color: "white", fontSize: 20, fontFamily: "heading" }}
+            >
               BRAND
             </Text>
           </View>
           <View style={{ flex: 1, alignItems: "flex-end" }}>
-            <Text style={{ color: "white", fontSize: 20, fontFamily: "text" }}>
+            <Text
+              style={{
+                color: "white",
+                fontSize: 20,
+                fontFamily: "text",
+                fontWeight: "400",
+              }}
+            >
               MODEL
             </Text>
           </View>
