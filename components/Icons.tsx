@@ -1,7 +1,7 @@
 import {
   AntDesign,
   Ionicons,
-  MaterialCommunityIcons
+  MaterialCommunityIcons,
 } from "@expo/vector-icons";
 import React from "react";
 
@@ -42,8 +42,7 @@ const Icons = ({ isFocused, route }: any) => {
   }
 };
 
-{ 
-
+{
   /*
     Code below is for adding labels to the icons
     <View style={{flexDirection: "column", alignItems: "center"}}>

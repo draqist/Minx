@@ -1,15 +1,17 @@
 import { Dimensions, StyleSheet } from "react-native";
 // theme color === #12182A
-const { width } = Dimensions.get("window");
+// Card color === #070252, #07033A
+export const { width } = Dimensions.get("window");
 
 export default StyleSheet.create({
   container: {
     flexDirection: "row",
     position: "absolute",
-    bottom: 35,
+    bottom: 45,
     backgroundColor: "#12182A",
     blurRadius: 9,
     borderRadius: 20,
+
     marginHorizontal: width * 0.05,
   },
   mainTab: {
