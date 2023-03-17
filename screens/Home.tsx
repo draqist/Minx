@@ -42,15 +42,18 @@ const Home = () => {
             marginTop: 28,
             borderRadius: 20,
             flexDirection: "row",
-            paddingHorizontal: 10,
-            paddingVertical: 12,
+            paddingHorizontal: 20,
+            paddingVertical: 18,
           }}
         >
           <View style={{ flex: 1, alignItems: "flex-start" }}>
             <Text
-              style={{ color: "white", fontSize: 20, fontFamily: "heading" }}
+              style={{ color: "white", fontSize: 20, fontFamily: "heading", marginBottom: 10 }}
             >
-              BRAND
+              Violet Evergarden
+            </Text>
+            <Text style={{color: "white", fontSize: 14, fontFamily: "text"}}>
+              After a great war, Violet Evergarden, a young ex-soldier woman works as writer
             </Text>
           </View>
           <View style={{ flex: 1, alignItems: "flex-end" }}>
