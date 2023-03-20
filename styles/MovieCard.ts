@@ -7,7 +7,7 @@ export default StyleSheet.create({
     borderRadius: 20,
     paddingHorizontal: 12,
     paddingVertical: 10,
-    width: 170
+    width: 170,
   },
   moviecardImage: {
     flex: 7,
